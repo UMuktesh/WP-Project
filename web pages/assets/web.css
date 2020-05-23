@@ -1,7 +1,7 @@
 * {box-sizing:border-box;}
-      
+
       body{margin:0px;}
-      
+
       .head{
       background-color:#cc3300;
       color:red;
@@ -13,9 +13,9 @@
       top:0px;
       overflow:hidden;
       }
-	  
-      
-      .foot{
+
+
+       .foot{
       background-color:#cc3300;
       padding:20px;
       color:white;
@@ -39,14 +39,14 @@
       padding:20px;
       font-size:25px;
       text-decoration:none;
-      color:white;   
+      color:white;
       }
 
       .head a:hover{
       background-color:white;
       color:black;
       }
-	
+
       .column {
       float:left;
       padding:25px;
@@ -85,7 +85,7 @@
 }
 
 #mySidenav a:hover {
-      left: 0;      
+      left: 0;
       }
 
 #about {
@@ -102,13 +102,13 @@
     top: 220px;
     background-color: #f44336;
 }
-      
+
 .content{
     margin-left:75px;
     font-size:30px;
     margin-right:50px;
 }
-#city_t {                    
+#city_t {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -120,18 +120,18 @@
     transition: width 0.4s ease-in-out;
 }
 
-#city_t:focus {              
+#city_t:focus {
     width: 90%;
 }
 
 .tb {
     width: 130px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    margin-left:75px;
+    /*margin-left:75px;*/
 }
 
 .tb_cc{
@@ -155,31 +155,31 @@ font-size:20px
     top:10px;
     z-index:1;
  }
- 
+
  .l_log {
 position:absolute;
 	float:centre;
     left:670px;
     top:10px;
-    z-index:1; 
+    z-index:1;
  }
 
  #cor {
     top: 280px;
-      background-color: #2196F3;   
+      background-color: #2196F3;
  }
  #far {
-     top: 360px;              
-      background-color: #f44336;   
+     top: 360px;
+      background-color: #f44336;
  }
  #an{
      top:280;
-     background-color: #2196F3;   
+     background-color: #2196F3;
  }
  #exhi{
      top:360;
-      background-color: #f44336;   
-     
+      background-color: #f44336;
+
  }
 
 
@@ -256,7 +256,7 @@ font-size:25px
     margin-right:25px;
 }
 .event{
-   text-transform:uppercase; 
+   text-transform:uppercase;
 }
 
 .bt{
@@ -281,4 +281,44 @@ font-size:25px
 .fs {
 	margin-right:200px;
 	margin-left:200px;
+}
+.formback{
+    background-color:#eeeeee;
+    width:98.5%;
+    border-radius:20px;
+    padding:20px;
+    font-size:25px;
+    color:black;
+}
+.formback table{
+    font-size:25px;
+}
+.formback input:focus,.formback textarea:focus{
+    border:2px solid #cc3300;
+    transition:0.2s;
+}
+
+.formback input[type="text"],.formback input[type="password"]{
+    position: relative;
+    width:50%;
+    border-radius:4px;
+}
+.formback textarea{
+    position:relative;
+    width:50%;
+    border-radius:4px;
+}
+.frmbtn{
+    width:100%;
+    align:center;
+    padding:16px;
+    font-size:25px;
+    background-color:#cc3300;
+    color:white;
+    border-radius:10px;
+}
+.frmbtn:hover{
+    background:white;
+    border:2px solid #cc3300;
+    color:#cc3300;
 }
