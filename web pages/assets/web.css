@@ -1,0 +1,284 @@
+* {box-sizing:border-box;}
+      
+      body{margin:0px;}
+      
+      .head{
+      background-color:#cc3300;
+      color:red;
+      font-size:25px;
+      text-align:center;
+      text-transform:capitalize;
+      position:-webkit-sticky;
+      position: sticky;
+      top:0px;
+      overflow:hidden;
+      }
+	  
+      
+       .foot{
+      background-color:#cc3300;
+      padding:20px;
+      color:white;
+      font-size:25px;
+      text-align:center;
+      text-transform:capitalize;
+      position:fixed;
+      bottom:0px;
+      width:100%;
+      overflow:hidden;
+      }
+
+      .foot a{
+      text-decoration:none;
+      color:white;
+      }
+
+      .head a {
+      text-transform:capitalize;
+      float:right;
+      padding:20px;
+      font-size:25px;
+      text-decoration:none;
+      color:white;   
+      }
+
+      .head a:hover{
+      background-color:white;
+      color:black;
+      }
+	
+      .column {
+      float:left;
+      padding:25px;
+      }
+
+   .menu {
+      width: 25%;
+      }
+      .menu li{
+      padding: 8px;
+      margin-bottom: 8px;
+      background-color: #33b5e5;
+      color: #ffffff;
+      text-align:center;
+      }
+
+      #mysidenav b{
+      top:160px;
+      color:white;
+/*         z-index:1;*/
+      font-size:30px;
+      float:right;
+      }
+
+      #mySidenav a {
+      position: fixed;
+      left: -115px;/*80*/
+      transition: 0.3s;
+      padding: 15px;
+      width: 168px;/*100*//*110*//*145*//*155*/
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+
+}
+
+#mySidenav a:hover {
+      left: 0;      
+      }
+
+#about {
+    top: 100px;
+    background-color: #4CAF50;
+}
+
+#wed {
+    top: 160px;
+    background-color: #2196F3;
+}
+
+#DJ {
+    top: 220px;
+    background-color: #f44336;
+}
+      
+.content{
+    margin-left:75px;
+    font-size:30px;
+    margin-right:50px;
+}
+#city_t {                    
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    margin-left:75px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#city_t:focus {              
+    width: 90%;
+}
+
+.tb {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    margin-left:75px;
+}
+
+.tb_cc{
+ width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+
+#frmd{
+font-size:20px
+
+}
+
+
+ .l{
+    position:absolute;
+    left:20px;
+    top:10px;
+    z-index:1;
+ }
+ 
+ .l_log {
+position:absolute;
+	float:centre;
+    left:670px;
+    top:10px;
+    z-index:1; 
+ }
+
+ #cor {
+    top: 280px;
+      background-color: #2196F3;   
+ }
+ #far {
+     top: 360px;              
+      background-color: #f44336;   
+ }
+ #an{
+     top:280;
+     background-color: #2196F3;   
+ }
+ #exhi{
+     top:360;
+      background-color: #f44336;   
+     
+ }
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 55%;
+    border-radius: 5px;
+}
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+.card4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.contain{
+    padding: 2px 16px;
+
+}
+
+#contain_con{
+font-size:25px
+}
+
+.link{
+    text-decoration:none;
+    color:black;
+}
+
+.logo{
+    position:fixed;
+}
+
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.offer{
+    background-color:#ffff66;
+    margin-right:25px;
+}
+
+.rate_table{
+    text-transform:capitalize;
+
+}
+.table_foot{
+    text-transform:uppercase;
+}
+.about{
+    background-color:#99ff99;
+    margin-right:25px;
+    text-transform:capitalize;
+}
+.u{
+    text-transform:uppercase;
+}
+.faq{
+    background-color:#80ffff;
+    margin-right:25px;
+}
+.event{
+   text-transform:uppercase; 
+}
+
+.bt{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.book_button{
+    border-color: #2196F3;
+  color: dodgerblue
+}
+.book_button:hover{
+    background:#2196f3;
+    color:white;
+
+}
+
+.fs {
+	margin-right:200px;
+	margin-left:200px;
+}

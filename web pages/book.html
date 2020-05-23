@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="web.css" type="text/css">
+    <script src="book.js">    </script>
+  </head>
+  <body>
+    <a href="about_home.html" class="l"><img src="logo.png" alt="logo" height="50px" width="150px"></a>
+    <div class="head">
+      <a href="about_home.html">about</A>
+	  <a href="contact_us.html">contact us</A>
+      <a href="about_small.html">small events</a>
+      <a href="about_large.html">large events</a>
+      <a href="home.html">home</a>     
+    </div>
+    <br>
+    <!--<br>for sepearation, initially-->
+    <div style="margin-left:20px;text-transform:capitalize;">
+<!-- ------------------ -->
+      
+<form name="frm" id="display" method="post" action="">
+  <fieldset style="margin-right:20px">
+    <legend>BOOK NOW</legend>
+name:<input type="text" class="tb" name="nam"><!--set width-->
+<br><br>
+address of the event<textarea rows="2" cols="60" class="tb" name="adress"></textarea>
+<br><br>
+
+<br><br>
+email id<input type="textbox" class="tb" name="email">
+<br><br>
+
+payment options: &nbsp<input type="radio" name="pay" onclick="frm.pay_o.value='cash'">cash &nbsp <input type="radio" name="pay" onclick="frm.pay_o.value='cheque'">cheque &nbsp<input type="radio" name="pay" onclick="frm.pay_o.value='credit card'">credit card <input type="text" name="pay_o" readonly length="20px" style="visibility:hidden">
+<br><br>
+
+credit card no. &nbsp <input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_1">&nbsp - &nbsp<input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_2">&nbsp - &nbsp<input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_3">&nbsp - &nbsp<input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_4">
+<br><br>
+CVV no. &nbsp<input type="password" maxlength="3"  style="width:40px" class="tb" name="cvv">
+<br><br>
+Event &nbsp<select name="eve" onchange="c(this.form)">
+<option value="Wedding">	Wedding	<!--</option>-->
+<option value="DJ party">	Dj party	<!--</option>-->
+<option value="Annual Function">	Annual Function	<!--</option>-->
+<option value="Exhibition">	Exhibition	<!--</option>-->
+<option value="Birthday">	Birthday	<!--</option>-->
+<option value="Anniversary">	Anniversary	<!--</option>-->
+<option value="Corporate event">	Corporate event	<!--</option>-->
+<option value="farewell">	Farewell	<!--</option>-->
+</select>     <input type="text" name="txt" class="tb_cc" readonly value="Wedding" style="visibility:hidden">
+<br><br>
+Event date &nbsp <input type="text" class="tb_cc" maxlength="2" style="width:25px" name="dat"> / <input type="text" class="tb_cc" maxlength="2" style="width:25px" name="mon"> / <input type="text" class="tb_cc" maxlength="2" style="width:25px" name="ye"> (DD/MM/YY)
+
+
+<br><br>
+contact no.<input type="textbox" maxlength="10" class="tb" name="contact">
+<hr>
+<input type="button" value="submit" onclick="b()">
+
+    </div>
+    </fieldset>
+</form>
+    <div style="overflow:auto; margin-bottom:50px;">     
+    <!--  <div class="column menu">
+        <ul>
+          <li>this is one</li>
+          <li>this is two</li>
+          <li>this is three</li>         
+        </ul>
+    </div>-->
+   
+
+
+      
+      <div class="foot">
+        <a href="mailto:ev_man@gmail.com">mail to us</a>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
+
+
+<!--<select name="dat">
+<option value="d1">	1	</option>
+<option value="d2">	2	</option>
+<option value="d3">	3	</option>
+<option value="d4">	4	</option>
+<option value="d5">	5	</option>
+<option value="d6">	6	</option>
+<option value="d7">	7	</option>
+<option value="d8">	8	</option>
+<option value="d9">	9	</option>
+<option value="d10">	10	</option>
+<option value="d11">	11	</option>
+<option value="d12">	12	</option>
+<option value="d13">	13	</option>
+<option value="d14">	14	</option>
+<option value="d15">	15	</option>
+<option value="d16">	16	</option>
+<option value="d17">	17	</option>
+<option value="d18">	18	</option>
+<option value="d19">	19	</option>
+<option value="d20">	20	</option>
+<option value="d21">	21	</option>
+<option value="d22">	22	</option>
+<option value="d23">	23	</option>
+<option value="d24">	24	</option>
+<option value="d25">	25	</option>
+<option value="d26">	26	</option>
+<option value="d27">	27	</option>
+<option value="d28">	28	</option>
+<option value="d29">	29	</option>
+<option value="d30">	30	</option>
+<option value="d31">	31	</option>
+</select>/
+<select>
+<option>	1	</option>
+<option>	2	</option>
+<option>	3	</option>
+<option>	4	</option>
+<option>	5	</option>
+<option>	6	</option>
+<option>	7	</option>
+<option>	8	</option>
+<option>	9	</option>
+<option>	10	</option>
+<option>	11	</option>
+<option>	12	</option>
+</select>/2018 <!-- use date time function or use 2018 instead (ask sir)-->
