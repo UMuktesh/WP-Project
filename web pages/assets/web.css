@@ -301,12 +301,10 @@ position:absolute;
 }
 
 .formback input[type="text"],.formback input[type="password"]{
-    position: relative;
     width:50%;
     border-radius:4px;
 }
 .formback textarea{
-    position:relative;
     width:50%;
     border-radius:4px;
 }
