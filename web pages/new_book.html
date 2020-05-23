@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <base href="./assets/">
+  <link rel="stylesheet" href="web.css" type="text/css">
+  <script src="book.js">    </script>
+</head>
+
+<body>
+  <a href="../about_home.html" class="l"><img src="logo.png" alt="logo" height="50px" width="150px"></a>
+  <div class="head">
+    <a href="../about_home.html">about</A>
+    <a href="../contact_us.html">contact us</A>
+    <a href="../about_small.html">small events</a>
+    <a href="../about_large.html">large events</a>
+    <a href="../home.html">home</a>
+  </div>
+  <br>
+  <div style="margin-left:20px;text-transform:capitalize;">
+    <form name="frm" id="display" action="" method="post">
+      <div class="formback">
+	<center>
+	  <h2>BOOK EVENT</h2>
+	<table class="frmtable" cellpadding="12px" cellspacing="10px">
+	 <tr>
+           <td>Name:</td><td><input type="text" class="tb" name="nam"><br></td>
+	 </tr>
+	 <tr>
+           <td>Address of the event</td><td> <textarea name="adress" rows="2" cols="60"></textarea><br></td>
+	 </tr>
+	 <tr>
+	   <td>Email id</td><td> <input type="text" name="email" class="tb"><br></td>
+	 </tr>
+         <tr>
+	   <td>Payment options:</td><td style="font-size:18px;"><br><input type="radio" name="pay" onclick="frm.pay_o.value='cash'">cash &nbsp <input
+          type="radio" name="pay" onclick="frm.pay_o.value='cheque'">cheque &nbsp<input type="radio" name="pay"
+          onclick="frm.pay_o.value='credit card'">credit card <input type="text" name="pay_o" readonly length="20px"
+          style="visibility:hidden"><br></td>
+	 </tr>
+         <tr>
+	<td>Credit card no.</td><td> <input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_1">&nbsp -
+        &nbsp<input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_2">&nbsp - &nbsp<input
+          type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_3">&nbsp - &nbsp<input type="text"
+          maxlength="4" style="width:50px" class="tb_cc" name="cc_4"><br></td>   
+	 </tr>
+         <tr>
+	   <td>CVV no.</td><td> <input type="password" name="cvv" maxlength="3" style="width:40px;" class="tb"><br></td>
+	 </tr>
+	 <tr>
+	   <td>Event</td><td> <select name="eve" onchange="c(this.form)">
+               <option value="Wedding"> Wedding
+		 
+               <option value="DJ party"> Dj party
+		 
+               <option value="Annual Function"> Annual Function
+		 
+               <option value="Exhibition"> Exhibition
+		 
+               <option value="Birthday"> Birthday
+		 
+               <option value="Anniversary"> Anniversary
+		 
+               <option value="Corporate event"> Corporate event
+		 
+               <option value="farewell"> Farewell
+		 
+             </select><input type="text" name="txt" class="tb_cc" readonly value="Wedding" style="visibility:hidden"><br>
+	   </td>
+	 </tr>
+	 <tr>
+           <td>Event date</td><td><input type="date" name="dat"><br></td>
+	 </tr>
+	 <tr>
+	   <td>contact no.</td><td><input type="textbox" maxlength="10" class="tb" name="contact"></td>
+	 </tr>
+	 <tr>
+	   <td colspan="2" align="center"><input type="button" value="submit" onclick="b();" class="frmbtn"></td>
+	 </tr>
+	</table>
+	</center>
+      </div>
+    </form>
+  </div>
+  <div style="overflow:auto; margin-bottom:50px;">
+
+
+
+
+    <div class="foot">
+      <a href="mailto:ev_man@gmail.com">mail to us</a>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

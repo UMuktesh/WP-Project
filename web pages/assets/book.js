@@ -14,9 +14,12 @@ function b(){
     var cc3=frm.cc_3.value;
     var cc4=frm.cc_4.value;
     var cv=frm.cvv.value;
-    var da=parseInt(frm.dat.value);
-    var m=parseInt(frm.mon.value);
-    var y= "20"+parseInt(frm.ye.value);
+//    var da=parseInt(frm.dat.value);
+  //  var m=parseInt(frm.mon.value);
+    //var y= "20"+parseInt(frm.ye.value);
+    var da = 25;
+    var m = 8;
+    var y = 2020;
     var con=frm.contact.value;
     var d;
     var x = new Date();
