@@ -5,6 +5,11 @@
 </head>
 
 <body>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
   <a href="../about_home.html" class="l"><img src="logo.png" alt="logo" height="50px" width="150px" class="logo"></a>
   <div class="head">
     <a href="../about_home.html">about</A>
@@ -26,14 +31,14 @@
       </div>
       <br><br>
       <div class="images">
-        <a href="#" onclick="return false;" class="link">
-          <div style="background-image: url('bir3.png');" class="card"></div>
+        <a class="link img">
+          <img src="bir3.png" alt="Standard Package" id="i1" class="card">
           <div class="contain">
             <center class="contain_con">Standard Package </center>
           </div>
         </a>
-        <a href="#" onclick="return false;" class="link">
-          <div style="background-image: url('bir2.jpg');" class="card"></div>
+        <a href="#" onclick="return false;" class="link img">
+          <img src="bir2.jpg" alt="Premium Package" class="card">
           <div class="contain">
             <center class="contain_con">Premium Package</center>
           </div>
@@ -59,6 +64,8 @@
       <a href="mailto:ev_man@gmail.com">mail to us</a>
     </div>
   </div>
+  <script src="modal.js"></script>
+
 </body>
 
 </html>

@@ -6,6 +6,11 @@
 </head>
 
 <body>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
   <a href="../about_home.html" class="l"><img src="logo.png" alt="logo" height="50px" width="150px" class="logo"></a>
   <div class="head">
     <a href="../about_home.html">about</A>
@@ -27,19 +32,18 @@
     <center>
       <div class="offer">CHECK OUT OUR NEW SERVICES</div>
     </center><br>
+
     <div class="images">
-      <a href="../exhibition.html" class="link">
-        <div style="background-image: url('exh_3.jpg');" class="card">
-        </div>
+      <a class="link img">
+        <img src="exh_3.jpg" alt="Exhibition" class="card">
         <div class="contain">
-          <center class="contain_con">Exhibition </center>
+          <center class="contain_con">Exhibition</center>
         </div>
       </a>
-      <a href="../corporate.html" class="link">
-        <div style="background-image: url('cor_3.jpg');" class="card">
-        </div>
+      <a class="link img">
+        <img src="cor_3.jpg" alt="Corporate Meeting" class="card">
         <div class="contain">
-          <center class="contain_con">Corporate Meeting </center>
+          <center class="contain_con">Corporate Meeting</center>
         </div>
       </a>
     </div>
@@ -56,6 +60,7 @@
       <a href="mailto:ev_man@gmail.com">mail to us</a>
     </div>
   </div>
+  <script src="modal.js"></script>
 </body>
 
 </html>
