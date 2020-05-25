@@ -152,7 +152,7 @@ font-size:20px
  .l{
     position:absolute;
     left:20px;
-    top:10px;
+    top:15px;
     z-index:1;
  }
 
@@ -544,6 +544,7 @@ position:absolute;
     }
     .checkbtn:hover{
       border:1.5px solid white;
+      padding: 5px;
       border-radius: 3px;
     }
     
