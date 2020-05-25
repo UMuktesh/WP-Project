@@ -185,31 +185,20 @@ position:absolute;
  .images {
     width: 100%;
     height: auto;
-    /* margin: auto;
     display: flex;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
  }
 
 .images a {
-    width: 40%;
-    max-width: 90%;
-    /* height: 400px; */
-    margin-left: 3.9%;
-    margin-right: 3.9%;
+    margin: auto;
     margin-bottom: 100px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    display: inline-block;
 }
-
-@media only screen and (max-width: 900px) {
-    .images a {
-        width: 88%;
-        margin-left: 6%;
-        margin-right: 6%;
-    }
-  }
 
 .card {
     width:100% !important;
