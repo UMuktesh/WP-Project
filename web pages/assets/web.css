@@ -564,7 +564,7 @@ position:absolute;
     }
     nav ul li a{
       font-size: 20px;
-      padding: 25px 170px;
+      padding: 25px 30%;
     
     }
     /* a:hover,a.active{
