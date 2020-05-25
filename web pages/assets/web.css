@@ -52,7 +52,7 @@
       padding:25px;
       }
 
-   .menu {
+      .menu {
       width: 25%;
       }
       .menu li{
@@ -82,21 +82,21 @@
       color: white;
       border-radius: 0 5px 5px 0;
 
-}
+    }
 
-#mySidenav a:hover {
+    #mySidenav a:hover {
       left: 0;
       }
 
-#about {
+      #about {
     top: 100px;
     background-color: #4CAF50;
-}
+  }
 
-#wed {
+  #wed {
     top: 160px;
     background-color: #2196F3;
-}
+  }
 
 #DJ {
     top: 220px;
@@ -182,110 +182,31 @@ position:absolute;
 
  }
 
- .images {
-    width: 100%;
-    height: auto;
-    margin: auto;
- }
-
-.images a {
-    width: 40%;
-    /* height: 400px; */
-    margin-left: 3.9%;
-    margin-right: 3.9%;
-    margin-bottom: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-@media only screen and (max-width: 900px) {
-    .images a {
-        width: 88%;
-        margin-left: 6%;
-        margin-right: 6%;
-    }
-  }
 
 .card {
-    width:100% !important;
-    background-size: cover;
-    height: auto;
-    background-position: center;
-    border-radius: 5px 5px 0px 0px;
-    background-repeat: no-repeat;
-    overflow: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    border-radius: 5px;
 }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 55%;
+    border-radius: 5px;
 }
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform: scale(0.1)} 
-  to {transform: scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     width: 100%;
-  }
+    border-radius: 5px;
+}
+.card4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
 }
 
 .contain{
@@ -293,10 +214,8 @@ position:absolute;
 
 }
 
-.contain_con{
-    font-size:25px;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+#contain_con{
+font-size:25px
 }
 
 .link{
@@ -309,7 +228,7 @@ position:absolute;
 }
 
 
-.images a:hover{
+.card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .offer{
@@ -400,4 +319,63 @@ position:absolute;
     background:white;
     border:2px solid #cc3300;
     color:#cc3300;
+}
+/* New content*/
+/* Popup container - can be anything you want*/
+.popup {
+  position: absolute;
+  /* top: -100%; */
+  /* left:-25%; */
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup*/
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
