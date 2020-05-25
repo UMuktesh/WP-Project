@@ -5,7 +5,7 @@ var captionText = document.getElementById("caption");
 
 
 
-var imgs = document.querySelectorAll('.img');
+var imgs = document.querySelectorAll('.card');
 imgs.forEach(i1 => i1.addEventListener('click', event => {
     modal.style.display = "block";
     modalImg.src = event.target.src;
