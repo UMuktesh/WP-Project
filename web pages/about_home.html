@@ -2,18 +2,25 @@
 
 <head>
   <base href="assets/" target="_self">
+  <script src="script.js"></script>
   <link rel="stylesheet" href="web.css" type="text/css">
 </head>
 
 <body>
-  <a href="../about_home.html" class="l"><img src="logo.png" alt="logo" height="50px" width="150px" class="logo"></a>
-  <div class="head">
-    <a href="../about_home.html">about</A>
-    <a href="../contact_us.html">contact us</A>
-    <a href="../about_small.html">small events</a>
-    <a href="../about_large.html">large events</a>
-    <a href="../home.html">home</a>
-  </div>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="../about_home.html" class="l"><img src="logo.png" alt="logo" height="50px" width="150px" class="logo"></a>
+      <ul>
+        <li><a href="../home.html">home</a></li>
+        <li><a href="../about_large.html">large events</a></li>
+        <li><a href="../about_small.html">small events</a></li>
+        <li><a href="../contact_us.html">contact us</a></li>
+        <li class="active"><a class="active" href="../about_home.html">about</a></li>
+      </ul>
+  </nav>
   <br>
   <div class="content">
     <p>Ev man is one of Gujarat&#39;s leading EVENT MANAGEMENT Company, integrating strategy, creativity and technology
