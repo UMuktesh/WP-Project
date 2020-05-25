@@ -492,11 +492,11 @@ position:absolute;
     margin: 0 2px;
     color: #f2f2f2;
   }
-  /* nav ul li.active,nav ul li:hover{
+  nav ul li.active,nav ul li:hover{
     background: #ffffff;
-    transition: .5s;
+    transition: .3s;
     color:#cc3300;
-  } */
+  }
   nav ul li a{
     color: #ffffff;
     font-weight: 500;
