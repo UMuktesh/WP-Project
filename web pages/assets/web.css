@@ -495,7 +495,7 @@ position:absolute;
   nav ul li.active,nav ul li:hover{
     background: #ffffff;
     transition: .5s;
-    color:black;
+    color:#cc3300;
   }
   nav ul li a{
     color: #ffffff;
