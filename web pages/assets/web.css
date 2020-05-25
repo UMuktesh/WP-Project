@@ -492,22 +492,22 @@ position:absolute;
     margin: 0 2px;
     color: #f2f2f2;
   }
-  nav ul li.active,nav ul li:hover{
+  /* nav ul li.active,nav ul li:hover{
     background: #ffffff;
     transition: .5s;
     color:#cc3300;
-  }
+  } */
   nav ul li a{
     color: #ffffff;
     font-weight: 500;
     font-size: 20px;
-    padding: 10px 23px;
+    padding: 30px 23px;
     border-radius: 3px;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
   }
   
-  a.active,a:hover{
+  nav ul li a.active,nav ul li a:hover{
     background: #ffffff;
     transition: .5s;
     color:black;
@@ -564,11 +564,13 @@ position:absolute;
     }
     nav ul li a{
       font-size: 20px;
+      padding: 25px 170px;
+    
     }
-    a:hover,a.active{
+    /* a:hover,a.active{
       background: none;
       color: #cc3300;
-    }
+    } */
     #check:checked ~ ul{
       left: 0;
     }
