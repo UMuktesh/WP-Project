@@ -26,26 +26,27 @@
   <br>
   <div style="margin-left:20px;text-transform:capitalize;">
     <form name="frm" id="display" action="" method="post">
+      <input type="text" style="visibility:hidden;" id="myText">
       <div class="formback">
 	<center>
 	  <h2>BOOK EVENT</h2>
 	<table class="frmtable" cellpadding="12px" cellspacing="10px">
 	 <tr>
-           <td>Name:</td><td><input type="text" class="tb" name="nam">
+           <td>Name:</td><td><input type="text" class="tb" name="nam" id="id1">
           <div class="popup">
             <span class="popuptext" id="name1" style="font-size:20px;">Enter name</span>
             <span class="popuptext" id="name2" style="font-size:20px;">Enter name properly</span>
           </div><br></td>
 	 </tr>
 	 <tr>
-           <td>Address of the event</td><td> <textarea name="adress" rows="2" cols="60"></textarea>
+           <td>Address of the event</td><td> <textarea name="adress" rows="2" cols="60" id="id2"></textarea>
              <div class="popup">
                <span class="popuptext" id="add1" style="font-size:20px;">Enter address</span>
                <span class="popuptext" id="add2" style="font-size:20px;">Enter address properly</span>
              </div><br></td>
 	 </tr>
 	 <tr>
-	   <td>Email id</td><td> <input type="text" name="email" class="tb">
+	   <td>Email id</td><td> <input type="text" name="email" class="tb" id="id3">
        <div class="popup">
          <span class="popuptext" id="em1" style="font-size:20px;">Enter email id</span>
          <span class="popuptext" id="em2" style="font-size:20px;">Enter email properly</span>
@@ -53,17 +54,17 @@
        </div><br></td>
 	 </tr>
          <tr>
-	   <td>Payment options:</td><td style="font-size:18px;"><br><input type="radio" name="pay" onclick="frm.pay_o.value='cash'">cash &nbsp <input
+	   <td>Payment options:</td><td style="font-size:18px;"><br><input type="radio" name="pay" onclick="frm.pay_o.value='cash'" id="id4">cash &nbsp <input
           type="radio" name="pay" onclick="frm.pay_o.value='cheque'">cheque &nbsp<input type="radio" name="pay"
           onclick="frm.pay_o.value='credit card'">credit card <input type="text" name="pay_o" readonly length="20px"
-          style="visibility:hidden">
+          style="visibility:hidden" id="myText2">
           <div class="popup">
             <span class="popuptext" id="pay1" style="font-size:20px;">Select payment option</span>
             <span class="popuptext" id="pay2" style="font-size:20px;">Select payment option properly</span>
           </div><br></td>
 	 </tr>
          <tr>
-	<td>Credit card no.</td><td> <input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_1">&nbsp -
+	<td>Credit card no.</td><td> <input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_1" id="id5">&nbsp -
         &nbsp<input type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_2">&nbsp - &nbsp<input
           type="text" maxlength="4" style="width:50px" class="tb_cc" name="cc_3">&nbsp - &nbsp<input type="text"
           maxlength="4" style="width:50px" class="tb_cc" name="cc_4">
@@ -72,7 +73,7 @@
           </div><br></td>
 	 </tr>
          <tr>
-	   <td>CVV no.</td><td> <input type="password" name="cvv" maxlength="3" style="width:40px;" class="tb">
+	   <td>CVV no.</td><td> <input type="password" name="cvv" maxlength="3" style="width:40px;" class="tb" id="id6">
        <div class="popup">
          <span class="popuptext" id="cvv1" style="font-size:20px;">Enter CVV number</span>
          <span class="popuptext" id="cvv2" style="font-size:20px;">Enter CVV number properly</span>
@@ -100,13 +101,13 @@
 	   </td>
 	 </tr>
    <tr>
-     <td>Package</td><td style="font-size:18px;"><input type="radio" name="standard" onclick="frm.pack.value='Standard'">Standard <input type="radio" name="premium" onclick="frm.pack.value='Premium'">Premium
+     <td>Package</td><td style="font-size:18px;"><input type="radio" name="standard" onclick="frm.pack.value='Standard'" id="id7">Standard <input type="radio" name="standard" onclick="frm.pack.value='Premium'">Premium
        <div class="popup">
          <span class="popuptext" id="packages" style="font-size:20px;">Enter package</span>
        </div><input type="text" name="pack" readonly length="20px" style="visibility:hidden;"></td>
    </tr>
 	 <tr>
-           <td>Event date</td><td><input type="date" name="dat">
+           <td>Event date</td><td><input type="date" name="dat" id="id8">
              <div class="popup">
                <span class="popuptext" id="date0" style="font-size:20px;">Enter date</span>
                <span class="popuptext" id="date1" style="font-size:20px;">Date's too far ahead</span>
@@ -114,7 +115,7 @@
              </div><br></td>
 	 </tr>
 	 <tr>
-	   <td>contact no.</td><td><input type="textbox" maxlength="10" class="tb" name="contact">
+	   <td>contact no.</td><td><input type="textbox" maxlength="10" class="tb" name="contact" id="id9">
        <div class="popup">
          <span class="popuptext" id="con1" style="font-size:20px;">Enter contact number</span>
          <span class="popuptext" id="con2" style="font-size:20px;">Enter contact number properly</span>
