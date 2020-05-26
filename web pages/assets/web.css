@@ -539,12 +539,14 @@ position:absolute;
       display: block;
       margin-right: 40px;
       margin-top: 20px;
-      padding: 3px;
+      padding: 3px 6px;
+      border:1.5px solid white;
+      border-style: hidden;
       
     }
     .checkbtn:hover{
-      border:1.5px solid white;
-      padding: 5px;
+      border-style: solid;
+      padding: 3px 6px;
       border-radius: 3px;
     }
     
