@@ -314,9 +314,9 @@ position:absolute;
     text-transform:uppercase;
 }
 .about{
-    background-color:#99ff99;
-    margin-right:25px;
-    text-transform:capitalize;
+    background-color:#c2f799;
+    /* margin-right:25px; */
+    /* text-transform:capitalize; */
 }
 .u{
     text-transform:uppercase;
