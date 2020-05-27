@@ -37,16 +37,16 @@ function b(){
     /////////////////////////////////
 
     if(na==""){
-        //alert("Enter name");
-        setFunction("name1","id1");
+        alert("Enter name");
+        //setFunction("name1","id1");
     }
     else if(isNaN(na)==0){
         // alert("Enter name properly")
         setFunction("name2","id1");
     }
     else if(add==""){
-        // alert("Enter address");
-        setFunction("add1","id2");
+         alert("Enter address");
+        //setFunction("add1","id2");
 
     }
      else if(isNaN(add)==0){
@@ -54,8 +54,8 @@ function b(){
         setFunction("add2","id2");
     }
     else if(em==""){
-        // alert("Enter email id");
-        setFunction("em1","id3")
+         alert("Enter email id");
+        //setFunction("em1","id3")
     }
      else if(isNaN(em)==0){
         // alert("Enter email properly");
@@ -71,8 +71,8 @@ function b(){
     //    payment option conditions
     /////////////////////////////////////
     else if(payo==""){
-        // alert("Select payment option");
-        setFunction("pay1","id4");
+         alert("Select payment option");
+        //setFunction("pay1","id4");
 
     }
     else if (payo != "credit card" && (cc1 != "" || cc2 != "" || cc3 !="" || cc4 !="")){
@@ -88,8 +88,8 @@ function b(){
 
     }
     else if(cv=="" && payo == "credit card"){
-        // alert("Enter CVV number");
-        setFunction("cvv1","id6");
+         alert("Enter CVV number");
+        //setFunction("cvv1","id6");
 
     }
     else if(payo =="credit card"  && (isNaN(cv)==1 || cv.length != 3)){
@@ -159,8 +159,8 @@ function b(){
     //    contact number condition
     ///////////////////////////////////
     else if(con==""){
-        // alert("Enter Contact number");
-        setFunction("con1","id9");
+         alert("Enter Contact number");
+        //setFunction("con1","id9");
     }
     else if(con.length != 10||isNaN(con)==1){
         // alert("Enter contact number properly");
