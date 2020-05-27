@@ -2,7 +2,7 @@
 
       body{margin:0px;}
 
-      .head{
+      /* .head{
       background-color:#cc3300;
       color:red;
       font-size:25px;
@@ -12,7 +12,7 @@
       position: sticky;
       top:0px;
       overflow:hidden;
-      }
+      } */
 
 
        .foot{
@@ -273,13 +273,6 @@ position:absolute;
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
 .contain{
     padding: 2px 16px;
 
@@ -463,12 +456,9 @@ input[type=submit]:hover {
   width: 150px;
 }
 
-@media screen and (max-width: 700px) {
-  .col-1, .col-2, .frmbtn {
-    width: 100%;
-    margin-top: 0;
-  }
-}
+/* @media screen and (max-width: 700px) {
+  
+} */
 
 .popup {
     position: absolute;
@@ -612,6 +602,18 @@ input[type=submit]:hover {
     }
   }
   @media (max-width: 858px){
+    /* Muktesh CSS */
+    .col-1, .col-2, .frmbtn {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    /* 100% Image Width on Smaller Screens */
+    .modal-content {
+      width: 100%;
+    }
+
+
     .checkbtn{
       display: block;
       margin-right: 40px;
