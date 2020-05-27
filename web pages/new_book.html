@@ -28,126 +28,130 @@
     <form name="frm" id="display" action="" method="post">
       <input type="text" style="visibility:hidden;" id="myText">
       <div class="formback">
-          <h2>BOOK EVENT</h2>
-          <div class="frmtable">
-            <div class="row">
-              <div class="col-1">Name</div>
-              <div class="col-2"><input type="text" class="tb" name="nam" id="id1">
-                <div class="popup">
-                  <span class="popuptext" id="name1" style="font-size:20px;">Enter name</span>
-                  <span class="popuptext" id="name2" style="font-size:20px;">Enter name properly</span>
-                </div><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">Address of the event</div>
-              <div class="col-2"> <textarea name="adress" rows="4" cols="100" id="id2"></textarea>
-                <div class="popup">
-                  <span class="popuptext" id="add1" style="font-size:20px;">Enter address</span>
-                  <span class="popuptext" id="add2" style="font-size:20px;">Enter address properly</span>
-                </div><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">Email id</div>
-              <div class="col-2"> <input type="text" name="email" class="tb" id="id3">
-                <div class="popup">
-                  <span class="popuptext" id="em1" style="font-size:20px;">Enter email id</span>
-                  <span class="popuptext" id="em2" style="font-size:20px;">Enter email properly</span>
-                  <span class="popuptext" id="em3" style="font-size:20px;">Enter correct email id</span>
-                </div><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">Payment options</div>
-              <div class="col-2" style="font-size:18px;"><input type="radio" name="pay" onclick="frm.pay_o.value='cash'" id="id4">&nbsp
-                cash &nbsp <input type="radio" name="pay" onclick="frm.pay_o.value='cheque'">&nbsp cheque &nbsp<input
-                  type="radio" name="pay" onclick="frm.pay_o.value='credit card'">&nbsp credit card <input type="text"
-                  name="pay_o" readonly length="20px" style="visibility:hidden" id="myText2">
-                <div class="popup">
-                  <span class="popuptext" id="pay1" style="font-size:20px;">Select payment option</span>
-                  <span class="popuptext" id="pay2" style="font-size:20px;">Select payment option properly</span>
-                </div><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">Credit card no.</div>
-              <div class="col-2"> <input type="text" maxlength="4" style="width:60px" class="tb_cc" name="cc_1" id="id5">&nbsp -
-                &nbsp<input type="text" maxlength="4" style="width:60px" class="tb_cc" name="cc_2">&nbsp - &nbsp<input
-                  type="text" maxlength="4" style="width:60px" class="tb_cc" name="cc_3">&nbsp - &nbsp<input type="text"
-                  maxlength="4" style="width:60px" class="tb_cc" name="cc_4">
-                <div class="popup">
-                  <span class="popuptext" id="cardno" style="font-size:20px;">Enter card number properly</span>
-                </div><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">CVV no.</div>
-              <div class="col-2"> <input type="password" name="cvv" maxlength="3" style="width:60px;" class="tb" id="id6">
-                <div class="popup">
-                  <span class="popuptext" id="cvv1" style="font-size:20px;">Enter CVV number</span>
-                  <span class="popuptext" id="cvv2" style="font-size:20px;">Enter CVV number properly</span>
-                </div><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">Event</div>
-              <div class="col-2"> <select name="eve" onchange="c(this.form)">
-                  <option value="Wedding"> Wedding
-
-                  <option value="DJ party"> Dj party
-
-                  <option value="Annual Function"> Annual Function
-
-                  <option value="Exhibition"> Exhibition
-
-                  <option value="Birthday"> Birthday
-
-                  <option value="Anniversary"> Anniversary
-
-                  <option value="Corporate event"> Corporate event
-
-                  <option value="farewell"> Farewell
-
-                </select><input type="text" name="txt" class="tb_cc" readonly value="Wedding"
-                  style="visibility:hidden"><br>
-              </div>
-            </div>
-              <div class="row">
-              <div class="col-1">Package</div>
-              <div class="col-2" style="font-size:18px;"><input type="radio" name="standard" onclick="frm.pack.value='Standard'"
-                  id="id7"> &nbsp Standard &nbsp <input type="radio" name="standard" onclick="frm.pack.value='Premium'">
-                &nbsp Premium
-                <div class="popup">
-                  <span class="popuptext" id="packages" style="font-size:20px;">Enter package</span>
-                </div><input type="text" name="pack" readonly length="20px" style="visibility:hidden;"></div>
-              </div>
-                <div class="row">
-              <div class="col-1">Event date</div>
-              <div class="col-2"><input type="date" name="dat" id="id8">
-                <div class="popup">
-                  <span class="popuptext" id="date0" style="font-size:20px;">Enter date</span>
-                  <span class="popuptext" id="date1" style="font-size:20px;">Date's too far ahead</span>
-                  <span class="popuptext" id="date2" style="font-size:20px;">Enter a future date</span>
-                </div><br>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-1">contact no.</div>
-              <div class="col-2"><input type="textbox" maxlength="10" class="tb" name="contact" id="id9">
-                <div class="popup">
-                  <span class="popuptext" id="con1" style="font-size:20px;">Enter contact number</span>
-                  <span class="popuptext" id="con2" style="font-size:20px;">Enter contact number properly</span>
-                </div>
-              </div>
+        <h2>BOOK EVENT</h2>
+        <div class="frmtable">
+          <div class="row">
+            <div class="col-1">Name</div>
+            <div class="col-2"><input type="text" class="tb" name="nam" id="id1">
+              <div class="popup">
+                <span class="popuptext" id="name1" style="font-size:20px;">Enter name</span>
+                <span class="popuptext" id="name2" style="font-size:20px;">Enter name properly</span>
+              </div><br>
             </div>
           </div>
           <div class="row">
-              <div class="submit" colspan="2" align="center"><input type="button" value="Book Now" onclick="b();" class="frmbtn"></div>
+            <div class="col-1">Address of the event</div>
+            <div class="col-2"> <textarea name="adress" rows="4" cols="100" id="id2"></textarea>
+              <div class="popup">
+                <span class="popuptext" id="add1" style="font-size:20px;">Enter address</span>
+                <span class="popuptext" id="add2" style="font-size:20px;">Enter address properly</span>
+              </div><br>
             </div>
-            <br />
-            <br />
-          </table>
+          </div>
+          <div class="row">
+            <div class="col-1">Email id</div>
+            <div class="col-2"> <input type="text" name="email" class="tb" id="id3">
+              <div class="popup">
+                <span class="popuptext" id="em1" style="font-size:20px;">Enter email id</span>
+                <span class="popuptext" id="em2" style="font-size:20px;">Enter email properly</span>
+                <span class="popuptext" id="em3" style="font-size:20px;">Enter correct email id</span>
+              </div><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Payment options</div>
+            <div class="col-2" style="font-size:18px;"><input type="radio" name="pay" onclick="frm.pay_o.value='cash'"
+                id="id4">&nbsp
+              cash &nbsp <input type="radio" name="pay" onclick="frm.pay_o.value='cheque'">&nbsp cheque &nbsp<input
+                type="radio" name="pay" onclick="frm.pay_o.value='credit card'">&nbsp credit card <input type="text"
+                name="pay_o" readonly length="20px" style="visibility:hidden" id="myText2">
+              <div class="popup">
+                <span class="popuptext" id="pay1" style="font-size:20px;">Select payment option</span>
+                <span class="popuptext" id="pay2" style="font-size:20px;">Select payment option properly</span>
+              </div><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Credit card no.</div>
+            <div class="col-2"> <input type="text" maxlength="4" style="width:60px" class="tb_cc" name="cc_1"
+                id="id5">&nbsp -
+              &nbsp<input type="text" maxlength="4" style="width:60px" class="tb_cc" name="cc_2">&nbsp - &nbsp<input
+                type="text" maxlength="4" style="width:60px" class="tb_cc" name="cc_3">&nbsp - &nbsp<input type="text"
+                maxlength="4" style="width:60px" class="tb_cc" name="cc_4">
+              <div class="popup">
+                <span class="popuptext" id="cardno" style="font-size:20px;">Enter card number properly</span>
+              </div><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">CVV no.</div>
+            <div class="col-2"> <input type="password" name="cvv" maxlength="3" style="width:60px;" class="tb" id="id6">
+              <div class="popup">
+                <span class="popuptext" id="cvv1" style="font-size:20px;">Enter CVV number</span>
+                <span class="popuptext" id="cvv2" style="font-size:20px;">Enter CVV number properly</span>
+              </div><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Event</div>
+            <div class="col-2"> <select name="eve" onchange="c(this.form)">
+                <option value="Wedding"> Wedding
+
+                <option value="DJ party"> Dj party
+
+                <option value="Annual Function"> Annual Function
+
+                <option value="Exhibition"> Exhibition
+
+                <option value="Birthday"> Birthday
+
+                <option value="Anniversary"> Anniversary
+
+                <option value="Corporate event"> Corporate event
+
+                <option value="farewell"> Farewell
+
+              </select><input type="text" name="txt" class="tb_cc" readonly value="Wedding"
+                style="visibility:hidden"><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Package</div>
+            <div class="col-2" style="font-size:18px;"><input type="radio" name="standard"
+                onclick="frm.pack.value='Standard'" id="id7"> &nbsp Standard &nbsp <input type="radio" name="standard"
+                onclick="frm.pack.value='Premium'">
+              &nbsp Premium
+              <div class="popup">
+                <span class="popuptext" id="packages" style="font-size:20px;">Enter package</span>
+              </div><input type="text" name="pack" readonly length="20px" style="visibility:hidden;"></div>
+          </div>
+          <div class="row">
+            <div class="col-1">Event date</div>
+            <div class="col-2"><input type="date" name="dat" id="id8">
+              <div class="popup">
+                <span class="popuptext" id="date0" style="font-size:20px;">Enter date</span>
+                <span class="popuptext" id="date1" style="font-size:20px;">Date's too far ahead</span>
+                <span class="popuptext" id="date2" style="font-size:20px;">Enter a future date</span>
+              </div><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">contact no.</div>
+            <div class="col-2"><input type="textbox" maxlength="10" class="tb" name="contact" id="id9">
+              <div class="popup">
+                <span class="popuptext" id="con1" style="font-size:20px;">Enter contact number</span>
+                <span class="popuptext" id="con2" style="font-size:20px;">Enter contact number properly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="submit" colspan="2" align="center"><input type="button" value="Book Now" onclick="b();"
+              class="frmbtn"></div>
+        </div>
+        <br />
+        <br />
+        </table>
       </div>
     </form>
   </div>
