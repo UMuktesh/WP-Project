@@ -305,7 +305,7 @@ position:absolute;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .offer{
-    background-color:#ffff66;
+    background-color:#ffff00 /*#ffff66*/;
     margin-right:25px;
 }
 
