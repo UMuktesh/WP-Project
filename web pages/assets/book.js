@@ -166,6 +166,9 @@ function b(){
         // alert("Enter contact number properly");
         setFunction("con2","id9");
       }
+    else{
+      window.location = "../home.html";
+    }
     }
   }
 }
