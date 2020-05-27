@@ -355,7 +355,7 @@ position:absolute;
 	margin-right:200px;
 	margin-left:200px;
 }
-.formback{
+/* .formback{
     background-color:#eeeeee;
     width:98.5%;
     border-radius:20px;
@@ -366,10 +366,14 @@ position:absolute;
 .formback table{
     font-size:20px;
 }
-.formback input:focus,.formback textarea:focus{
-    border:2px solid #cc3300;
-    transition:0.2s;
+.formback input{
+  padding: 10px;
 }
+.formback textarea{
+  padding: 10px;
+  resize: none;
+}
+
 
 .formback input[type="text"],.formback input[type="password"]{
     width:50%;
@@ -378,21 +382,94 @@ position:absolute;
 .formback textarea{
     width:50%;
     border-radius:4px;
-}
+}*/
 .frmbtn{
-    width:100%;
+    width:30%;
     left: 50%;
     padding:16px;
     font-size:25px;
     background-color:#cc3300;
-    color:white;
+    color:rgba(255, 255, 255, 0.856);
     border-radius:10px;
 }
 .frmbtn:hover{
     background:white;
     border:2px solid #cc3300;
     color:#cc3300;
+} 
+
+input[type=text], input[type=date], input[type=textbox], input[type=password], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
+
+.formback input:focus,.formback textarea:focus{
+  border:1px solid #cc3300;
+  transition:0.2s;
+}
+
+.col-1 {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* input[type=submit] {
+  left: 50%;
+  background-color: #cc3300;
+  color:rgba(255, 255, 255, 0.856);
+  font-size:25px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background:white;
+    border:2px solid #cc3300;
+    color:#cc3300;
+} */
+
+.frmtable {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size:20px;
+}
+
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-2 select, input[type=date], input[type=textbox]{
+  width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-1, .col-2, .frmbtn {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 .popup {
     position: absolute;
     /* top: -100%; */
