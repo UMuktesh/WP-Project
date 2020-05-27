@@ -30,6 +30,7 @@ function b(){
     var o_m = x.getMonth()+1;
     var o_y = x.getFullYear();
     var flag = 0;
+    var eventName = frm.eve.value;
     /////////////////////////////////
     /////////////////////////////////
     //      checking form
@@ -39,6 +40,9 @@ function b(){
     if(na==""){
         alert("Enter name");
         //setFunction("name1","id1");
+    }
+    else if(/[^a-z,^A-Z]$/.test(na)){
+      setFunction("name2","id1");
     }
     else if(isNaN(na)==0){
         // alert("Enter name properly")
@@ -96,6 +100,9 @@ function b(){
          // alert("Enter CVV number  properly");
          setFunction("cvv2","id6");
 
+    }
+    else if(eventName == ""){
+      alert("Select Event");
     }
     ///////////////////////////////////////
     //            Package conditions
