@@ -30,16 +30,16 @@
       <div class="formback">
 	<center>
 	  <h2>BOOK EVENT</h2>
-	<table class="frmtable" cellpadding="20px" cellspacing="20px">
+	<table class="frmtable" cellpadding="10px" cellspacing="20px" border="0px">
 	 <tr>
-           <td>Name:</td><td><input type="text" class="tb" name="nam" id="id1">
+           <td>Name</td><td><input type="text" class="tb" name="nam" id="id1">
           <div class="popup">
             <span class="popuptext" id="name1" style="font-size:20px;">Enter name</span>
             <span class="popuptext" id="name2" style="font-size:20px;">Enter name properly</span>
           </div><br></td>
 	 </tr>
 	 <tr>
-           <td>Address of the event</td><td> <textarea name="adress" rows="2" cols="60" id="id2"></textarea>
+           <td>Address of the event</td><td> <textarea name="adress" rows="4" cols="100" id="id2"></textarea>
              <div class="popup">
                <span class="popuptext" id="add1" style="font-size:20px;">Enter address</span>
                <span class="popuptext" id="add2" style="font-size:20px;">Enter address properly</span>
@@ -54,9 +54,9 @@
        </div><br></td>
 	 </tr>
          <tr>
-	   <td>Payment options:</td><td style="font-size:18px;"><br><input type="radio" name="pay" onclick="frm.pay_o.value='cash'" id="id4">cash &nbsp <input
-          type="radio" name="pay" onclick="frm.pay_o.value='cheque'">cheque &nbsp<input type="radio" name="pay"
-          onclick="frm.pay_o.value='credit card'">credit card <input type="text" name="pay_o" readonly length="20px"
+	   <td>Payment options</td><td style="font-size:18px;"><input type="radio" name="pay" onclick="frm.pay_o.value='cash'" id="id4">&nbsp cash &nbsp <input
+          type="radio" name="pay" onclick="frm.pay_o.value='cheque'">&nbsp cheque &nbsp<input type="radio" name="pay"
+          onclick="frm.pay_o.value='credit card'">&nbsp credit card <input type="text" name="pay_o" readonly length="20px"
           style="visibility:hidden" id="myText2">
           <div class="popup">
             <span class="popuptext" id="pay1" style="font-size:20px;">Select payment option</span>
@@ -101,7 +101,7 @@
 	   </td>
 	 </tr>
    <tr>
-     <td>Package</td><td style="font-size:18px;"><input type="radio" name="standard" onclick="frm.pack.value='Standard'" id="id7">Standard <input type="radio" name="standard" onclick="frm.pack.value='Premium'">Premium
+     <td>Package</td><td style="font-size:18px;"><input type="radio" name="standard" onclick="frm.pack.value='Standard'" id="id7"> &nbsp Standard &nbsp <input type="radio" name="standard" onclick="frm.pack.value='Premium'"> &nbsp Premium
        <div class="popup">
          <span class="popuptext" id="packages" style="font-size:20px;">Enter package</span>
        </div><input type="text" name="pack" readonly length="20px" style="visibility:hidden;"></td>
