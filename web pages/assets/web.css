@@ -308,6 +308,8 @@ position:absolute;
 
 .rate_table{
     text-transform:capitalize;
+    font-size: 30px;
+    border: dotted;
 
 }
 .table_foot{
