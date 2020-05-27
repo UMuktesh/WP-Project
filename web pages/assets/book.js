@@ -174,7 +174,13 @@ function b(){
         setFunction("con2","id9");
       }
     else{
-      window.location = "../home.html";
+      var da = r3[1][1]+r3[1][2];
+      var m = r2[0][1]+r2[0][2];
+      var y = r1[0][0]+r1[0][1]+r1[0][2]+r1[0][3];
+      var message = `<p style="font-size: xx-large; text-transform: none !important;">Thank you for choosing us ${na}. <br /> Ev Man will make your ${eventName} on ${da}-${m}-${y} a grand success. <br />We will contact you shortly.</p>`
+      document.getElementById('title').innerHTML = '<b style="font-size: xxx-large;">Thank You</b><br />';
+      document.getElementById('message').innerHTML = message;
+      return false;
     }
     }
   }
