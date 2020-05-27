@@ -103,10 +103,14 @@
     background-color: #f44336;
 }
 
+.padding{
+  padding: 5px 10%;
+}
+
 .content{
-    margin-left:75px;
+    /* margin-left:75px; */
     font-size:30px;
-    margin-right:50px;
+    /* margin-right:50px; */
 }
 #city_t {
     width: 130px;
@@ -298,8 +302,8 @@ position:absolute;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .offer{
-    background-color:#ffff00 /*#ffff66*/;
-    margin-right:25px;
+    background-color:  #eeeeee /* #ffff00 #ffff66; */
+    /* margin-right:25px; */
 }
 
 .rate_table{
