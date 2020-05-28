@@ -6,9 +6,9 @@ function b(){
     //////////////////////////////
     var dateControl = document.querySelector('input[type="date"]');
     var str = dateControl.value;
-    var patt1 = /[0-9]*-/g;
-    var patt2 = /-[0-9]*-/g;
-    var patt3 = /-[0-9]*/g;
+    var patt1 = /[0-9]*-/g; //year
+    var patt2 = /-[0-9]*-/g;//month
+    var patt3 = /-[0-9]*/g;//day
     var r1 = str.match(patt1);
     var r2 = str.match(patt2);
     var r3 = str.match(patt3);
@@ -137,7 +137,7 @@ function b(){
         setFunction("date0","id8");
         flag = 0;
       }
-      else{
+      else{//yyyy-mm-dd
         var da = r3[1][1]+r3[1][2];
         var m = r2[0][1]+r2[0][2];
         var y = r1[0][0]+r1[0][1]+r1[0][2]+r1[0][3];
@@ -152,7 +152,7 @@ function b(){
     /* else if(o_y != y){
       alert("Enter year properly");
         }*/
-    else if((o_da > da || o_da == da)&& o_m == m){                      // checking with current date which is set in the computer being used
+    else if(o_da >= da && o_m == m){                      // checking with current date which is set in the computer being used
         // alert("Enter date properly");
         setFunction("date2","id8");
 
@@ -195,6 +195,7 @@ function myFunction(idName) {
   var popup = document.getElementById(idName);
   popup.classList.toggle("show");
 }
+
 function setFunction(tag,element){
   myFunction(tag);
   setTimeout(myFunction,2500,tag);
