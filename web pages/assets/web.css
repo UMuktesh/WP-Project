@@ -565,7 +565,7 @@ nav ul li a.active, nav ul li a:hover {
   display: none;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 950px) {
 
   input[type=text], input[type=date], input[type=textbox], input[type=password], select, textarea {
     width: 100%;
@@ -635,7 +635,7 @@ nav ul li a.active, nav ul li a:hover {
   }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 850px) {
 
   .rate_table {
     font-size: 20px;
